@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="bootstrap-4.0.0/bootstrap-4.0.0/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="bootstrap-4.0.0/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+	<link href="style.css" rel="stylesheet" />
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="Login.css" type="text/css" />
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script src="script.js"></script>
+    
+   
+</head>
+
+<body>
+<div class="header">
+
+	<ul>
+	<img src="d2.png" id="i1" class="logo">
+	<li><a class="active" href="Register.html" style="font-size:30px;margin-right:30px;margin-top:16px;">SignUp</a></li>
+	<li><a class="active" href="Home.html" style="font-size:30px;margin-right:30px;margin-top:16px;">Home</a></li>
+	</ul>
+</div>
+<table>
+<tr>
+
+<td>
+ <div id="d">
+<img src="bg.png"></div>
+</td>
+<td>
+	<h1 style="color:black; margin-left:300px"><u>Login</u></h1>
+	<label style="margin-left:98px;font-size: 20px"> E-mail - </label>
+	<input type="text" id="email" style="margin-left:136px" required><br>
+	<label style="margin-left:90px;font-size: 20px"> Password - </label>
+	<input type="password" id="password" style="margin-left:110px" required><br>
+	<br><br><a href="forgotPWD.html" id="a1" style="color:black"><u>Forgot Password?</u></a>
+	<br>
+	<p>If you have'nt registered yet please register <a href="Register.html" style="color:black;"><u>Here....</u></a></p>
+	<br><input type="submit" id="submit" onclick="login()" value="LOGIN" style="background-color:#4E99DD"><br><br>
+</td>
+
+</tr>
+</table>
+
+
+<br><br><br><br>
+</body>
+<br><br><br>
+<footer>
+
+</footer>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="Home.css" type="text/css" />
+
+</head>
+
+<body style="font-family:Lucida Sans Unicode;">
+ <div class="header">
+	<ul>
+		<img src="d2.png" id="i1" class="logo">
+		<li><a class="active" href="logout.html" style="font-size:30px;margin-right:30px;margin-top:16px;">Log Out</a></li>
+		<li><a class="active" href="Contact.html" style="font-size:30px;margin-right:30px;margin-top:16px;">Contact Us</a></li>
+	<li><a class="active" href="Images.html" style="font-size:30px;margin-right:30px;margin-top:16px;">Gallery</a></li>
+		<li><a class="active" href="Products.html" style="font-size:30px;margin-right:30px;margin-top:16px;">Products</a></li>
+		<li><a class="active" href="Home.html" style="font-size:30px;margin-right:30px;margin-top:16px;">Home</a></li>
+	</ul>
+</div>
+<h2 class="bg-text" style="text-align: center" >Newly Arrived Premium Dell Laptop <br></h2>
+
+<div class="container">
+  <div class="Slides">
+    <div class="numbertext">1 / 6</div>
+    <a href="Products.html"> <img src="homepage_pics/1.jpg" style="width:100%"></a>
+    
+  </div>
+
+  <div class="Slides">
+    <div class="numbertext">2 / 6</div>
+    <a href="Products.html"><img src="homepage_pics/2.jpg" style="width:100% ">
+        </div>
+
+  <div class="Slides">
+    <div class="numbertext">3 / 6</div>
+    <a href="Products.html"><img src="homepage_pics/3.jpg" style="width:100%">
+  </div>
+    
+  <div class="Slides">
+    <div class="numbertext">4 / 6</div>
+    <a href="Products.html"><img src="homepage_pics/4.jpg" style="width:100%">
+  </div>
+
+  <div class="Slides">
+    <div class="numbertext">5 / 6</div>
+   <a href="Products.html"> <img src="homepage_pics/5.jpg" style="width:100%">
+  </div>
+    
+  <div class="Slides">
+    <div class="numbertext">6 / 6</div>
+    <a href="Products.html"><img src="homepage_pics/6.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row" class="bg-text">
+    <div class="column">
+      <img class="demo cursor" src="homepage_pics/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Inspiron 15 5000 Laptop">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="homepage_pics/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Inspiron 17 7000 2-in-1 Laptop">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="homepage_pics/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="XPS 15 Laptop">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="homepage_pics/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Inspiron 14 5000 Laptop">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="homepage_pics/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="XPS 15 Laptop">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="homepage_pics/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Inspiron 15 7000 Laptop">
+    </div>
+  </div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("Slides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+  
+<hr><br>
+<div>
+<table id="abt1" style="margin-left:400px;height:100px;">
+<tr>
+	<td style="width:31%;">
+		<h3 style="margin-left:40px;"><u>About Us</u></h3> 
+		<h5 style="margin-left:40px;">Newly Arrived Premium<br> Dell Laptop is a Online<br> Shopping Site
+		from<br> where you can buy Laptops.</h5><br><br><br>
+	</td>
+	<td>
+	<h3 style="margin-left:45px;"><u>Contact Us</u></h3> 
+		<h5 style="margin-left:45px;">Phone no:<br>+1 5163526812</h5>
+		<h5 style="margin-left:45px;">E-mail:<br>xyz@email.com</h5><br><br><br>
+	</td>
+	<td>
+	<h3><u>Created By</u></h3>
+		
+		<h5>Tejashvi Patel</h5>
+		<h5>Hiral Bhatt</h5>
+		<h5>Nehal Patel</h5>
+		<h5>Dilpreet Kaur</h5>
+		<h5>Gurkaranbir Hundal</h5>
+	</td>
+</tr>
+</table>
+<img src="f.png" style="width:70px; height:70px;margin-left:500px;">
+<img src="t.png" style="width:70px; height:70px;">
+<img src="l.png" style="width:70px; height:70px;">
+<img src="i.png" style="width:70px; height:70px;">
+<br><br>
+</div>
+
+     
+</body>
+<footer>
+
+</footer>
+</html>
